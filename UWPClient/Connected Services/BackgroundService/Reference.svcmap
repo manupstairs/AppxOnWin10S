@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="e936d174-1666-4e57-8b4b-c437e3b407e9" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.ObjectModel.ObservableCollection`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>false</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8000/LocalService/backgroundService" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="backgroundService.xsd" MetadataType="Schema" ID="6fa63147-8164-461a-a49c-0f0de6170b6d" SourceId="1" SourceUrl="http://localhost:8000/LocalService/backgroundService?xsd=xsd2" />
+    <MetadataFile FileName="backgroundService1.xsd" MetadataType="Schema" ID="7958e3c6-1a06-491d-996b-a866cb3a1440" SourceId="1" SourceUrl="http://localhost:8000/LocalService/backgroundService?xsd=xsd1" />
+    <MetadataFile FileName="backgroundService2.xsd" MetadataType="Schema" ID="11dce1af-0a87-4e24-9180-d1a5bb1a2d19" SourceId="1" SourceUrl="http://localhost:8000/LocalService/backgroundService?xsd=xsd0" />
+    <MetadataFile FileName="LocalServiceWrapper.wsdl" MetadataType="Wsdl" ID="f4415651-80fd-4171-82e8-84e3d38e6615" SourceId="1" SourceUrl="http://localhost:8000/LocalService/backgroundService?wsdl" />
+    <MetadataFile FileName="backgroundService.disco" MetadataType="Disco" ID="86459219-3e01-44ef-955d-43987764d80e" SourceId="1" SourceUrl="http://localhost:8000/LocalService/backgroundService?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
