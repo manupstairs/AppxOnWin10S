@@ -31,10 +31,10 @@ namespace UWPClient
         public MainPage()
         {
             this.InitializeComponent();
-            InitializeBackgroundProcess();
+            RunLauncher();
         }
 
-        private async void InitializeBackgroundProcess()
+        private async void RunLauncher()
         {
             if (ApiInformation.IsApiContractPresent("Windows.ApplicationModel.FullTrustAppContract", 1, 0))
             {
