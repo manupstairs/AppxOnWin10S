@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BackgroundProcess\BackgroundProcess.csproj" />
+    <ProjectReference Include="..\Launcher\Launcher.csproj" />
     <ProjectReference Include="..\UWPClient\UWPClient.csproj" />
   </ItemGroup>
   <Import Project="$(WapProjPath)\Microsoft.DesktopBridge.targets" />

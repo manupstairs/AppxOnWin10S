@@ -9,6 +9,8 @@ Project("{C7167F0D-BC9F-4E6E-AFE1-012C56B48DB5}") = "AppxPackaging", "AppxPackag
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackgroundProcess", "BackgroundProcess\BackgroundProcess.csproj", "{73422E05-360E-43B8-9A1C-EA018A827A7C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Launcher", "Launcher\Launcher.csproj", "{C5355B52-2582-4EFD-A8B2-9492DFCBA339}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -98,6 +100,26 @@ Global
 		{73422E05-360E-43B8-9A1C-EA018A827A7C}.Release|x64.Build.0 = Release|Any CPU
 		{73422E05-360E-43B8-9A1C-EA018A827A7C}.Release|x86.ActiveCfg = Release|Any CPU
 		{73422E05-360E-43B8-9A1C-EA018A827A7C}.Release|x86.Build.0 = Release|Any CPU
+		{C5355B52-2582-4EFD-A8B2-9492DFCBA339}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5355B52-2582-4EFD-A8B2-9492DFCBA339}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5355B52-2582-4EFD-A8B2-9492DFCBA339}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{C5355B52-2582-4EFD-A8B2-9492DFCBA339}.Debug|ARM.Build.0 = Debug|Any CPU
+		{C5355B52-2582-4EFD-A8B2-9492DFCBA339}.Debug|ARM64.ActiveCfg = Debug|Any CPU
+		{C5355B52-2582-4EFD-A8B2-9492DFCBA339}.Debug|ARM64.Build.0 = Debug|Any CPU
+		{C5355B52-2582-4EFD-A8B2-9492DFCBA339}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{C5355B52-2582-4EFD-A8B2-9492DFCBA339}.Debug|x64.Build.0 = Debug|Any CPU
+		{C5355B52-2582-4EFD-A8B2-9492DFCBA339}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C5355B52-2582-4EFD-A8B2-9492DFCBA339}.Debug|x86.Build.0 = Debug|Any CPU
+		{C5355B52-2582-4EFD-A8B2-9492DFCBA339}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5355B52-2582-4EFD-A8B2-9492DFCBA339}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5355B52-2582-4EFD-A8B2-9492DFCBA339}.Release|ARM.ActiveCfg = Release|Any CPU
+		{C5355B52-2582-4EFD-A8B2-9492DFCBA339}.Release|ARM.Build.0 = Release|Any CPU
+		{C5355B52-2582-4EFD-A8B2-9492DFCBA339}.Release|ARM64.ActiveCfg = Release|Any CPU
+		{C5355B52-2582-4EFD-A8B2-9492DFCBA339}.Release|ARM64.Build.0 = Release|Any CPU
+		{C5355B52-2582-4EFD-A8B2-9492DFCBA339}.Release|x64.ActiveCfg = Release|Any CPU
+		{C5355B52-2582-4EFD-A8B2-9492DFCBA339}.Release|x64.Build.0 = Release|Any CPU
+		{C5355B52-2582-4EFD-A8B2-9492DFCBA339}.Release|x86.ActiveCfg = Release|Any CPU
+		{C5355B52-2582-4EFD-A8B2-9492DFCBA339}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

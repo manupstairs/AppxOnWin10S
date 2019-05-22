@@ -41,7 +41,7 @@
           Wide310x150Logo="Images\Wide310x150Logo.png" />
       </uap:VisualElements>
       <Extensions>
-        <desktop:Extension xmlns:desktop="http://schemas.microsoft.com/appx/manifest/desktop/windows10" Category="windows.fullTrustProcess" Executable="BackgroundProcess\BackgroundProcess.exe" />
+        <desktop:Extension xmlns:desktop="http://schemas.microsoft.com/appx/manifest/desktop/windows10" Category="windows.fullTrustProcess" Executable="Launcher\Launcher.exe" />
       </Extensions>
     </Application>
   </Applications>
