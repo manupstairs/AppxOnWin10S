@@ -16,5 +16,7 @@ namespace BackgroundProcess
         [OperationContract]
         ServiceControllerStatus StartService(string name);
 
+        [OperationContract]
+        ServiceControllerStatus GetServiceStatus(string name);
     }
 }

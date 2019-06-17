@@ -9,6 +9,14 @@ namespace BackgroundProcess
 {
     public class LocalServiceWrapper : ILocalService
     {
+        public ServiceControllerStatus GetServiceStatus(string name)
+        {
+            Console.WriteLine($"Ready to query {name} service……");
+            ServiceController controller = new ServiceController(name);
+
+            return controller.Status;
+        }
+
         public ServiceControllerStatus StartService(string name)
         {
             Console.WriteLine($"Ready to start {name} service……");

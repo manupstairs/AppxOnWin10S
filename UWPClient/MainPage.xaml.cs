@@ -25,7 +25,7 @@ namespace UWPClient
     /// </summary>
     public sealed partial class MainPage : Page
     {
-        private string serviceName = "aspnet_state";
+        private string serviceName = "bthserv";
         private LocalServiceClient client = new LocalServiceClient();
 
         public MainPage()
@@ -42,10 +42,21 @@ namespace UWPClient
             }
         }
 
+        private async void QueryServiceStatus()
+        {
+            var status = await client.GetServiceStatusAsync(serviceName);
+            textBlockStatus.Text = status.ToString();
+        }
+
         private async void Button_Click(object sender, RoutedEventArgs e)
         {
             var status = await client.StartServiceAsync(serviceName);
             textBlockStatus.Text = status.ToString();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            QueryServiceStatus();
         }
     }
 }

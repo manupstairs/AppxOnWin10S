@@ -13,16 +13,35 @@
   <wsdl:message name="ILocalService_StartService_OutputMessage">
     <wsdl:part name="parameters" element="tns:StartServiceResponse" />
   </wsdl:message>
+  <wsdl:message name="ILocalService_GetServiceStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetServiceStatus" />
+  </wsdl:message>
+  <wsdl:message name="ILocalService_GetServiceStatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetServiceStatusResponse" />
+  </wsdl:message>
   <wsdl:portType name="ILocalService">
     <wsdl:operation name="StartService">
       <wsdl:input wsaw:Action="http://tempuri.org/ILocalService/StartService" message="tns:ILocalService_StartService_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/ILocalService/StartServiceResponse" message="tns:ILocalService_StartService_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetServiceStatus">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILocalService/GetServiceStatus" message="tns:ILocalService_GetServiceStatus_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILocalService/GetServiceStatusResponse" message="tns:ILocalService_GetServiceStatus_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_ILocalService" type="tns:ILocalService">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
     <wsdl:operation name="StartService">
       <soap:operation soapAction="http://tempuri.org/ILocalService/StartService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetServiceStatus">
+      <soap:operation soapAction="http://tempuri.org/ILocalService/GetServiceStatus" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

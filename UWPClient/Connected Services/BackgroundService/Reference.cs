@@ -47,6 +47,9 @@ namespace UWPClient.BackgroundService {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ILocalService/StartService", ReplyAction="http://tempuri.org/ILocalService/StartServiceResponse")]
         System.Threading.Tasks.Task<UWPClient.BackgroundService.ServiceControllerStatus> StartServiceAsync(string name);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ILocalService/GetServiceStatus", ReplyAction="http://tempuri.org/ILocalService/GetServiceStatusResponse")]
+        System.Threading.Tasks.Task<UWPClient.BackgroundService.ServiceControllerStatus> GetServiceStatusAsync(string name);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -94,6 +97,10 @@ namespace UWPClient.BackgroundService {
         
         public System.Threading.Tasks.Task<UWPClient.BackgroundService.ServiceControllerStatus> StartServiceAsync(string name) {
             return base.Channel.StartServiceAsync(name);
+        }
+        
+        public System.Threading.Tasks.Task<UWPClient.BackgroundService.ServiceControllerStatus> GetServiceStatusAsync(string name) {
+            return base.Channel.GetServiceStatusAsync(name);
         }
         
         public virtual System.Threading.Tasks.Task OpenAsync() {

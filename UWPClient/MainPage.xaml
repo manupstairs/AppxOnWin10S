@@ -9,9 +9,11 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+        <TextBlock>Service name: Bluetooth Support Service(bthserv)</TextBlock>
         <TextBlock>Service status:</TextBlock>
         <TextBlock x:Name="textBlockStatus"></TextBlock>
-        <Button Height="60" Click="Button_Click">Start Windows service</Button>
+        <Button Height="60" Click="Button_Click_1" Margin="4">Query Bluetooth Support Service(bthserv) status</Button>
+        <Button Height="60" Click="Button_Click"  Margin="4">Start Bluetooth Support Service(bthserv)</Button>
 
     </StackPanel>
 </Page>
